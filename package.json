@@ -1,15 +1,9 @@
 {
   "name": "frontend-assignment",
   "author": {
-    "name": "Walter Barbagallo",
-    "email": "walter.barbagallo@satispay.com"
+    "name": "Andrei Ciulpan",
+    "email": "jolsty94@gmail.com"
   },
-  "contributors": [
-    {
-      "name": "Alessio Dionisi",
-      "email": "alessio.dionisi@satispay.com"
-    }
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
