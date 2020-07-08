@@ -22,6 +22,8 @@ Once cloned this project can be installed with `yarn install`.
 You can run scripts on client with `yarn workspace @frontend-assignment/client <command>`, and on server with `yarn workspace @frontend-assignment/server <command>`.  
 For the server you can start the the app with `yarn workspace @frontend-assignment/server start`.
 
+However, there are a few shortcuts: for the client you can use `yarn client` and for the server you can use `yarn server` inside the root directory.
+
 ## Tasks
 
 ### Server side

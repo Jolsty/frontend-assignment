@@ -1,14 +1,16 @@
 {
-  "name": "frontend-assignment",
-  "author": {
-    "name": "Andrei Ciulpan",
-    "email": "jolsty94@gmail.com"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "private": true
+	"name": "frontend-assignment",
+	"author": {
+		"name": "Andrei Ciulpan",
+		"email": "jolsty94@gmail.com"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"client": "yarn workspace @frontend-assignment/client start",
+		"server": "yarn workspace @frontend-assignment/server start"
+	},
+	"workspaces": [
+		"packages/*"
+	],
+	"private": true
 }

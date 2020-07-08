@@ -12,3 +12,7 @@ export interface Connection<A> {
 	edges: Array<Edge<A>>;
 	pageInfo: PageInfo;
 }
+
+export interface Pokemon {
+	name: string;
+}

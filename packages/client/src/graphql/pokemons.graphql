@@ -1,0 +1,9 @@
+query getPokemons($limit: Int = 10) {
+	pokemons(limit: $limit) {
+		edges {
+			node {
+				name
+			}
+		}
+	}
+}
