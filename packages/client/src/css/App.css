@@ -1,25 +1,33 @@
 @import '~antd/dist/antd.css';
 
 @font-face {
-	font-family: myFont;
-	src: url('../@fonts/Manrope-SemiBold.woff2');
+  font-family: Manrope;
+  src: url('../@fonts/Manrope-SemiBold.woff2');
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #222;
-	color: white;
-	font-family: myFont;
-	font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: white;
+  font-family: Manrope;
+  font-size: 18px;
 }
 
 .app {
-	text-align: center;
+  text-align: center;
 }
 
 .loading {
-	left: 50%;
-	top: 50%;
-	position: absolute;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.pokemon-name {
+  font-style: italic;
+}
+
+thead[class*='ant-table-thead'] th {
+  font-size: 1.5rem;
 }

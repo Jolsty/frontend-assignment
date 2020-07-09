@@ -1,9 +1,12 @@
-query getPokemons($limit: Int = 10) {
-	pokemons(limit: $limit) {
-		edges {
-			node {
-				name
-			}
-		}
-	}
+query Pokemons($limit: Int = 10) {
+  pokemons(limit: $limit) {
+    edges {
+      node {
+        id
+        name
+        types
+        classification
+      }
+    }
+  }
 }
