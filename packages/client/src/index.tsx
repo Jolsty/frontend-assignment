@@ -7,5 +7,5 @@ const rootEl = document.getElementById('root');
 render(<App />, rootEl);
 
 if (module.hot) {
-	module.hot.accept();
+  module.hot.accept();
 }
