@@ -1,4 +1,4 @@
-query Pokemons($limit: Int = 10) {
+query Pokemons($limit: Int) {
   pokemons(limit: $limit) {
     edges {
       node {

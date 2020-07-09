@@ -53,7 +53,7 @@ export function mapTypeToColor(type: string): string {
       color = '#000000';
       break;
     case 'fairy':
-      color = '#ffffb8';
+      color = '#9e1068';
       break;
     default:
       color = '#ffffff';

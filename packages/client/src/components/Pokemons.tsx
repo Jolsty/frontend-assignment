@@ -9,17 +9,15 @@ import { Pokemons, PokemonsVariables, Pokemons_pokemons_edges } from '../@types/
 
 import { mapTypeToColor } from '../util/functions';
 
-import Loading from '../components/Loading';
-
 const Pokemons: React.FC = () => {
-  const { loading, error, data } = useQuery<Pokemons, PokemonsVariables>(QUERY);
+  const { loading, error, data } = useQuery<Pokemons, PokemonsVariables>(QUERY, {
+    variables: {
+      limit: 50,
+    },
+  });
 
   if (error) {
     return <div>Something strange happened</div>;
-  }
-
-  if (loading) {
-    return <Loading />;
   }
 
   if (!loading && !data) {
@@ -27,7 +25,14 @@ const Pokemons: React.FC = () => {
   }
 
   return (
-    <Table<Pokemons_pokemons_edges> dataSource={data?.pokemons?.edges} rowKey="id" bordered>
+    <Table<Pokemons_pokemons_edges>
+      dataSource={data?.pokemons?.edges}
+      rowKey="id"
+      bordered
+      loading={loading}
+      pagination={{ position: ['bottomCenter'], pageSize: 10 }}
+      className="custom-ant-table"
+    >
       <Table.Column<Pokemons_pokemons_edges>
         key="name"
         title="Name"
