@@ -11,6 +11,8 @@ This project is powered by `yarn` and workspaces.
 Once cloned this project can be installed with `yarn`.  
 Provided that you are in the root folder, you can start the client with `yarn client` and the server with `yarn server`.
 
+After you've started the client and the server, you can find the application running at `http://localhost:3000`
+
 You can download the GraphQL schema and automatically generate types (although they are already generated) on the client by going into `packages/client` and then running `yarn generate`. If you generate them, I recommend that you remove the null cases from the generated types otherwise this won't work (had some annoying issues with this). If you just cloned this app there's no need to generate new types unless you make some changes.
 
 # Assignment for Frontend Position
