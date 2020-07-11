@@ -54,13 +54,13 @@ body {
   font-size: 18px;
   box-sizing: border-box;
   overflow: auto;
-  text-align: center;
   height: 95vh;
 }
 
 h1 {
   margin: 20px 20px;
   color: inherit;
+  text-align: center;
 }
 
 footer {
@@ -71,14 +71,13 @@ footer {
 
 footer a {
   font-size: 14px;
-  background-color: royalblue;
   padding: 5px 5px;
   border-radius: 10px;
   color: white;
 }
 
 footer a:hover {
-  color: black;
+  color: grey;
 }
 
 thead[class*='ant-table-thead'] th {
@@ -89,9 +88,8 @@ button {
   margin-left: 10px;
 }
 
-.search-input {
-  position: relative;
-  top: 20px;
+.input {
+  margin-top: 20px;
 }
 
 .custom-ant-table {
@@ -103,8 +101,24 @@ button {
   left: 0px;
 }
 
-/* Smaller screens so that it doesn't look so horrible :) */
+.input-container {
+  margin: 0 auto;
+  text-align: left;
+  right: 0px;
+  left: 0px;
+  position: relative;
+  max-width: 600px;
+}
 
+.label {
+  display: inline-block;
+  width: 105px;
+  max-width: 105px;
+  overflow: hidden;
+  line-height: 1;
+}
+
+/* Smaller screens so that it doesn't look so horrible :) */
 @media only screen and (max-width: 800px) {
   .custom-ant-table {
     width: 550px;

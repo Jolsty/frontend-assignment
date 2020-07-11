@@ -36,7 +36,7 @@ export interface Pokemons {
 }
 
 export interface PokemonsVariables {
-  limit?: number;
-  q?: string;
-  after?: string;
+  limit?: number | null;
+  q?: string | null;
+  after?: string | null;
 }

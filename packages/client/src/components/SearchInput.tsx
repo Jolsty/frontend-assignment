@@ -3,19 +3,23 @@ import React from 'react';
 import { Input, Button } from 'antd';
 import { SearchOutlined, PlusOutlined } from '@ant-design/icons';
 
-import { SearchFormProps } from '../@types/CustomTypes';
+import { SearchInputProps } from '../@types/CustomTypes';
 
-const SearchInput: React.FC<SearchFormProps> = ({
+import Label from './Label';
+
+const SearchInput: React.FC<SearchInputProps> = ({
   handleChange,
   handleClick,
   hasNextPage,
-}: SearchFormProps) => (
-  <div className="search-input">
+  searchParams,
+}: SearchInputProps) => (
+  <div className="input">
     <Input
-      addonBefore="Search"
+      addonBefore={<Label text="Search by name" />}
       allowClear
       onChange={handleChange}
-      style={{ width: 400 }}
+      value={searchParams}
+      style={{ width: 450 }}
       prefix={<SearchOutlined />}
     />
     {hasNextPage && (

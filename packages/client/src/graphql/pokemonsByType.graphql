@@ -1,0 +1,15 @@
+query PokemonsByType($limit: Int, $type: String!, $after: ID) {
+  pokemonsByType(limit: $limit, type: $type, after: $after) {
+    pageInfo {
+      hasNextPage
+    }
+    edges {
+      node {
+        id
+        name
+        types
+        classification
+      }
+    }
+  }
+}

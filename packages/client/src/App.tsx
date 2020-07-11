@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import PokemonList from './components/PokemonList';
 
-import './css/App.css';
+import './css/styles.css';
 
 const App: React.FC = () => (
   <ApolloProvider client={client}>

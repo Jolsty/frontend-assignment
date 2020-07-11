@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.tsx",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot",
+    "start": "webpack-dev-server --mode development --hot --client-log-level warning",
     "build": "webpack --mode production",
     "downloadSchema": "apollo schema:download src/graphql/schema.json --endpoint=http://localhost:4000/graphql",
     "generate": "yarn downloadSchema && apollo codegen:generate --target=typescript --excludes=node_modules/* --includes=src/**/*.graphql --endpoint=http://localhost:4000/graphql --tagName=gql --outputFlat=src/@types/generated --localSchemaFile=src/graphql/schema.json && echo ************Remember to remove nulls from the generated types or this won't work...*******************"
