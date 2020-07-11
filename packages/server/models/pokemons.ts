@@ -47,7 +47,7 @@ export function query(args: {
 		data,
 		filterByQ,
 		sliceByAfter,
-		// slicing limit + 1 because the `toConnection` function should known the connection size to determine if there are more results
+		// slicing limit + 1 because the `toConnection` function should know the connection size to determine if there are more results
 		slice(0, limit + 1),
 	);
 	return toConnection(results, limit);

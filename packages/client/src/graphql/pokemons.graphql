@@ -1,5 +1,8 @@
-query Pokemons($limit: Int) {
-  pokemons(limit: $limit) {
+query Pokemons($limit: Int, $q: String, $after: ID) {
+  pokemons(limit: $limit, q: $q, after: $after) {
+    pageInfo {
+      hasNextPage
+    }
     edges {
       node {
         id

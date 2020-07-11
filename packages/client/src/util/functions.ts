@@ -58,5 +58,6 @@ export function mapTypeToColor(type: string): string {
     default:
       color = '#ffffff';
   }
+
   return color;
 }

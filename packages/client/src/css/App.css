@@ -48,14 +48,14 @@ section {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #223;
   color: white;
   font-family: Manrope;
   font-size: 18px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
+  text-align: center;
+  height: 95vh;
 }
 
 h1 {
@@ -64,32 +64,53 @@ h1 {
 }
 
 footer {
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
-  right: 0px;
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+}
+
+footer a {
   font-size: 14px;
+  background-color: royalblue;
+  padding: 5px 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+footer a:hover {
+  color: black;
 }
 
 thead[class*='ant-table-thead'] th {
   font-size: 1.5rem;
 }
 
-.app {
-  text-align: center;
+button {
+  margin-left: 10px;
 }
 
-.pokemon-name {
-  font-style: italic;
-}
-
-.search-container {
+.search-input {
   position: relative;
   top: 20px;
 }
 
 .custom-ant-table {
-  position: relative;
-  width: 70vw;
   margin: 0 auto;
+  overflow-y: auto;
+  width: 1000px;
+  position: relative;
+  right: 0px;
+  left: 0px;
+}
+
+/* Smaller screens so that it doesn't look so horrible :) */
+
+@media only screen and (max-width: 800px) {
+  .custom-ant-table {
+    width: 550px;
+  }
+
+  thead[class*='ant-table-thead'] th {
+    font-size: 1.2rem;
+  }
 }

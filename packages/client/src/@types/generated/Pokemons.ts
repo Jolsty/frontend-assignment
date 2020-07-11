@@ -7,6 +7,11 @@
 // GraphQL query operation: Pokemons
 // ====================================================
 
+export interface Pokemons_pokemons_pageInfo {
+  __typename: 'PageInfo';
+  hasNextPage: boolean;
+}
+
 export interface Pokemons_pokemons_edges_node {
   __typename: 'Pokemon';
   id: string;
@@ -22,6 +27,7 @@ export interface Pokemons_pokemons_edges {
 
 export interface Pokemons_pokemons {
   __typename: 'PokemonsConnection';
+  pageInfo: Pokemons_pokemons_pageInfo;
   edges: Pokemons_pokemons_edges[];
 }
 
@@ -31,4 +37,6 @@ export interface Pokemons {
 
 export interface PokemonsVariables {
   limit?: number;
+  q?: string;
+  after?: string;
 }
