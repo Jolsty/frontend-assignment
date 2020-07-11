@@ -1,3 +1,16 @@
+# Notes
+
+This app has been developed and tested on `node (v.12.16.3)` with `yarn (v.1.22.4)`.
+
+# How to run
+
+This project is powered by `yarn` and workspaces.
+
+Once cloned this project can be installed with `yarn`.  
+Provided that you are in the root folder, you can start the client with `yarn client` and the server with `yarn server`.
+
+You can download the GraphQL schema and automatically generate types (although they are already generated) on the client by going into `packages/client` and then running `yarn generate`. If you generate them, I recommend that you remove the null cases from the generated types otherwise this won't work (had some annoying issues with this). If you just cloned this app there's no need to generate new types unless you make some changes.
+
 # Assignment for Frontend Position
 
 In Satispay one of the main task for a frontend developer is to build useful interfaces in order to display, search and interact with data.
@@ -16,13 +29,6 @@ The client app will be powered by `typescript`, `react`, [`apollo-client`](https
 
 You can add other libraries if needed; if you are not confident with some of this libraries you can pick alternatives.  
 For the client side app we recommend to use `webpack`.
-
-This project is powered by `yarn` and workspaces.  
-Once cloned this project can be installed with `yarn install`.  
-You can run scripts on client with `yarn workspace @frontend-assignment/client <command>`, and on server with `yarn workspace @frontend-assignment/server <command>`.  
-For the server you can start the the app with `yarn workspace @frontend-assignment/server start`.
-
-However, there are a few shortcuts: for the client you can use `yarn client` and for the server you can use `yarn server` inside the root directory.
 
 ## Tasks
 
