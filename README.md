@@ -1,5 +1,6 @@
 # Notes
 
+This app has been developed by Andrei Ciulpan as an assignment by Satispay.
 This app has been developed and tested on `node (v.12.16.3)` with `yarn (v.1.22.4)`.
 
 # How to run
