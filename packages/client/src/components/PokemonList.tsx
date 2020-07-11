@@ -69,7 +69,7 @@ const PokemonList: React.FC = () => {
      Get all pokemons when both fields are empty or if search input has a value
      Both filter and search inputs should never have a value at the same time
     */
-    if (!(params.filter && params.search) || params.search) {
+    if ((!params.filter && !params.search) || params.search) {
       setIsDataByName(true);
     }
 
