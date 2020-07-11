@@ -1,6 +1,6 @@
 # Notes
 
-This app was developed by Andrei Ciulpan as an assignment by Satispay.
+This app was developed by [Andrei Ciulpan](https://github.com/Jolsty/frontend-assignment) as an assignment by Satispay.
 
 It was developed and tested on `node (v.12.16.3)` with `yarn (v.1.22.4)`.
 
